@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Fira Sans", sans-serif;
+}
+
+header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  h1 {
+    color: #aaa;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+
+    strong {
+      color: #313131;
+    }
+  }
+}
+
+.content-wrap {
+  display: flex;
+
+  aside {
+    flex: 1 1 250px;
+    max-width: 250px;
+    padding-right: 16px;
+
+    nav {
+      padding-left: 16px;
+      padding-right: 16px;
+
+      h3 {
+        color: #313131;
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
+
+      a {
+        display: block;
+        padding: 8px 16px;
+        text-align: left;
+
+        color: #888;
+        font-size: 16px;
+        margin-bottom: 16px;
+
+        background-color: #eee;
+        border-radius: 999px;
+        text-decoration: none;
+
+        transition: 0.4s;
+
+        &:hover {
+          background-color: #313131;
+          color: #aaa;
+        }
+      }
+    }
+  }
+
+  main {
+    flex: 1 1 0%;
+    padding: 0px 16px;
+
+    .main-head {
+      display: flex;
+      justify-content: flex-end;
+
+      .search-box {
+        display: flex;
+        justify-content: center;
+        flex: 1 1 0%;
+
+        input {
+          appearance: none;
+          background: none;
+          outline: none;
+          border: none;
+          display: block;
+          width: 100%;
+          max-width: 400px;
+          padding: 16px;
+          border-radius: 999px;
+          background-color: #eee;
+          transition: 0.4s;
+
+          ::placeholder {
+            color: #888;
+          }
+
+          &:focus,
+          &:valid {
+            background-color: #313131;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .anime-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 32px;
+      margin: 32px -8px 0px;
+
+      .anime-card {
+        position: relative;
+        height: 100%;
+        flex: 1 0 12rem;
+        margin: 0 1rem 2rem;
+        color: #fff;
+
+        a {
+          text-decoration: none;
+        }
+
+        figure {
+          display: block;
+          margin-bottom: 16px;
+
+          img {
+            border-radius: 0.4rem;
+            width: 100%;
+            display: block;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+          }
+        }
+
+        h3 {
+          color: #313131;
+        }
+
+        &:hover {
+          figure {
+            img {
+              box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+              transform: scale(1.05);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  aside {
+    display: none;
+  }
+  .anime-card {
+    width: 100%;
+  }
+}
