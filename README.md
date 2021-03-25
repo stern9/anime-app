@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/stern9/anime-app">
+  <a href="https://stern9-anime-app.netlify.app/">
     <img src="https://i.pinimg.com/originals/10/c3/bd/10c3bd29ff6e9304ee9e3ed75f426170.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -48,10 +48,6 @@
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
-
-### Prerequisites
-
-Make sure to have a Security Key from your FaunaDB Collection and pass its value within a .env.local file
 
 ### Installation
 
